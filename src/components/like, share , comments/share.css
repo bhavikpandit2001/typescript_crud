@@ -1,0 +1,8 @@
+.apps {
+    display: flex;
+}
+
+.apps div {
+    margin: 0 17px;
+    background-color: whitesmoke;
+}
