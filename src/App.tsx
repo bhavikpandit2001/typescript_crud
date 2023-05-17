@@ -10,6 +10,7 @@ import Posts from './components/Posts';
 import Products from './components/Products';
 import Quotes from './components/Quotes';
 import Todos from './components/Todos';
+import { ROUTES } from './constants/Routes';
 
 function App() {
 
@@ -17,14 +18,14 @@ function App() {
     <div className="App">
       <Navbar/>
       <Routes>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/products' element={<Products/>}/>
-        <Route path='/cart' element={<Carts/>}/>
-        <Route path='/quotes' element={<Quotes/>}/>
-        <Route path='/todos' element={<Todos/>}/>
-        <Route path='/posts' element={<Posts/>}/>
-        <Route path='/orders' element={<Orders/>}/>
+        <Route path={ROUTES.signIn} element={<Login/>}/>
+        <Route path={ROUTES.default} element={<Home/>}/>
+        <Route path={ROUTES.products} element={<Products/>}/>
+        <Route path={ROUTES.carts} element={<Carts/>}/>
+        <Route path={ROUTES.quotes} element={<Quotes/>}/>
+        <Route path={ROUTES.todos} element={<Todos/>}/>
+        <Route path={ROUTES.posts} element={<Posts/>}/>
+        <Route path={ROUTES.orders} element={<Orders/>}/>
       </Routes>
       <Footer/>
     </div>

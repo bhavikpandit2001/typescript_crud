@@ -54,12 +54,12 @@ const Posts = () => {
             <h2 className='h2'>posts management </h2>
             <div className='posts'>
                 <div style={{ margin: "10px 10px", display: "flex", justifyContent: "space-between" }}>
-                <Form onFinish={Search}>
-                        <div style={{display: "flex", justifyContent: "space-between"}}>
-                        <Form.Item name="search">
-                        <Input style={{ borderRadius: "10px" }} type='search' placeholder='please type text to search'/>
-                        </Form.Item>
-                        <Button htmlType='submit'><SearchOutlined/></Button>
+                    <Form onFinish={Search}>
+                        <div style={{ display: "flex", justifyContent: "space-between" }}>
+                            <Form.Item name="search">
+                                <Input style={{ borderRadius: "10px" }} type='search' placeholder='please type text to search' />
+                            </Form.Item>
+                            <Button htmlType='submit'><SearchOutlined /></Button>
                         </div>
                     </Form>
                     <AddPost />

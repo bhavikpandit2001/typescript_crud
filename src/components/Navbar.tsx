@@ -1,6 +1,7 @@
 import { ShopOutlined } from '@ant-design/icons'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { ROUTES } from '../constants/Routes'
 
 const Navbar = () => {
   return (
@@ -11,28 +12,28 @@ const Navbar = () => {
             </div>
             <div style={{display: "flex", alignItems:"center", textAlign: "center"}}>
                 <div style={{width: "100px"}}>
-                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to='/'>User</Link>
+                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to={ROUTES.default}>User</Link>
                 </div>
                 <div style={{width: "100px"}}>
-                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to='/products'>Products</Link>
+                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to={ROUTES.products}>Products</Link>
                 </div>
                 <div style={{width: "100px"}}>
-                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to='/cart'>Cart</Link>
+                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to={ROUTES.carts}>Cart</Link>
                 </div>
                 <div style={{width: "100px"}}>
-                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to='/quotes'>Quotes</Link>
+                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to={ROUTES.quotes}>Quotes</Link>
                 </div>
                 <div style={{width: "100px"}}>
-                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to='/posts'>Posts</Link>
+                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to={ROUTES.posts}>Posts</Link>
                 </div>
                 <div style={{width: "100px"}}>
-                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to='/todos'>Todos</Link>
+                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to={ROUTES.todos}>Todos</Link>
                 </div>
                 <div style={{width: "100px"}}>
-                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to='/login'>Login</Link>
+                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to={ROUTES.signIn}>Login</Link>
                 </div>
                 <div style={{width: "100px"}}>
-                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to='/orders'><ShopOutlined/></Link>
+                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to={ROUTES.orders}><ShopOutlined/></Link>
                 </div>
             </div>
         </div>
