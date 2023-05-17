@@ -22,6 +22,7 @@ const AddProduct = () => {
       message.error("something went wrong")
     })
   }
+  
   return (
     <>
       <PlusCircleFilled style={{ fontSize: "25px", color: "#1379e5" }} onClick={OpenModal} />

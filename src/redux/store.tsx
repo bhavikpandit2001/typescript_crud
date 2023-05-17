@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import authSlice from "./Auth/authSlice";
 import cartSlice from "./carts/cartSlice";
+import orderSlice from "./orders/orderSlice";
 import commentSlice from "./posts/commentSlice";
 import postSlice from "./posts/postSlice";
 import productSlice from "./products/productSlice";
@@ -17,6 +18,7 @@ const rootReducer = combineReducers({
     todos: todoSlice,
     posts: postSlice,
     comments: commentSlice,
+    orders: orderSlice
 })
 
 export const store = configureStore({

@@ -3,11 +3,9 @@ import { userprops } from "../../types/Types";
 
 type  UserState = {
    list: userprops[],
-   
 } 
 const initialState: UserState = {
     list:[],
-
 }
 
 const userSlice = createSlice({
@@ -17,7 +15,6 @@ const userSlice = createSlice({
         setUsers: (state,{payload})=>{
             state.list = payload;
         },
-        
     } 
 
 })

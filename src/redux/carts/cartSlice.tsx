@@ -18,7 +18,7 @@ const userSlice = createSlice({
             state.list = payload;
         },
         setUserCart: (state,{payload}) => {
-            state.usercart = payload
+            state.usercart = payload 
         }
     } 
 

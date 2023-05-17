@@ -1,6 +1,6 @@
 import { FacebookFilled, InstagramFilled, LinkedinFilled, ShareAltOutlined, TwitterCircleFilled, WhatsAppOutlined, YoutubeFilled } from '@ant-design/icons'
 import { Input, Modal } from 'antd'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./share.css"
 const Share = () => {

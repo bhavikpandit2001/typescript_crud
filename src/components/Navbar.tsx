@@ -1,3 +1,4 @@
+import { ShopOutlined } from '@ant-design/icons'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -29,6 +30,9 @@ const Navbar = () => {
                 </div>
                 <div style={{width: "100px"}}>
                   <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to='/login'>Login</Link>
+                </div>
+                <div style={{width: "100px"}}>
+                  <Link style={{color: "white", textDecoration: "none", fontSize: "20px"}} to='/orders'><ShopOutlined/></Link>
                 </div>
             </div>
         </div>

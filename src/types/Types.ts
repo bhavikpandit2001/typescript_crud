@@ -1,78 +1,57 @@
 
-import { ReactElement } from "react";
-
-export type FormValues = {
+export interface FormValues {
   username: string;
   password: string;
 };
 
-export type userprops = {
-  userdata: {
+export interface userprops {
     id: number;
     email: string;
     username: string;
     password: string;
-  }[]
 }
-export type userColumn = {
-  title: string;
-  dataIndex: string;
-  key: string;
-  render?: (password: string) => ReactElement<HTMLInputElement>;
-};
-export type productprops = {
-  product: {
+
+export interface productprops {
     id: number,
     title: string,
     category: string,
     price: number,
     brand: string,
     thumbnail: string,
-    description: string
-  }[]
+    description: string,
+    search?: string
 }
-export type product = {
+
+export interface orderprops {
+  id: number,
   title: string,
   category: string,
   price: number,
   brand: string,
   thumbnail: string,
-  description: string
+  description: string,
 }
-export type productColumn = {
-  title: string;
-  dataIndex: string;
-  key: string;
-  render?: (thumbnail: string) => ReactElement<HTMLInputElement>;
-  // render?: (record: product) => ReactElement<HTMLButtonElement>;
-}
+
 export interface cartprops {
     id: string,
     total: number,
     totalProducts: number,
     totalQuantity: number
 }
-// export type cartColumn = {
-//   title: string;
-//   dataIndex: string;
-//   key: string;
-//   render?: (record: any) => ReactElement<HTMLInputElement>;
 
-// }
-
-export type quotesprops = {
+export interface quotesprops{
   id: number;
   quote: string;
   author: string;
 }
 
-export type todosprops = {
+export interface todosprops {
   id: number,
   todo: string,
   completed: string,
   userId: number
 }
-export type postprops = {
+export interface postprops {
   id: number,
   title: string,
   body: string,
@@ -81,13 +60,7 @@ export type postprops = {
   reactions: string
 }
 
-export type todoColumn = {
-  title: string;
-  dataIndex: string;
-  key: string;
-  render?: (completed: string) => ReactElement<HTMLInputElement>;
-}
-export type commentprops = {
+export interface commentprops{
   id: number,
   body: string,
   postId: number,

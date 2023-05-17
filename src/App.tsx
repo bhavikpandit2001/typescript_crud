@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
+import Orders from './components/Orders';
 import Posts from './components/Posts';
 import Products from './components/Products';
 import Quotes from './components/Quotes';
@@ -23,6 +24,7 @@ function App() {
         <Route path='/quotes' element={<Quotes/>}/>
         <Route path='/todos' element={<Todos/>}/>
         <Route path='/posts' element={<Posts/>}/>
+        <Route path='/orders' element={<Orders/>}/>
       </Routes>
       <Footer/>
     </div>

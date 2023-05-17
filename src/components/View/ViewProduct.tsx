@@ -1,6 +1,7 @@
 import { AlipayOutlined, EyeOutlined, InfoOutlined, MobileOutlined, ShoppingCartOutlined } from '@ant-design/icons'
 import { Badge, Button, Image, Modal, Rate, Typography } from 'antd'
-import React, { useState } from 'react'
+import { useState } from 'react'
+import OrderBtn from '../OrderBtn'
 import "./viewuser.css"
 const ViewProduct = ({ record }: any) => {
     const [open, setOpen] = useState(false)
@@ -39,9 +40,10 @@ const ViewProduct = ({ record }: any) => {
                                 </div>
                                 <div className='userlinks'>
                                     <div>
-                                    <Button type='primary'> But Now </Button>
+                                    <OrderBtn item={record}/>
                                     </div>
                                     <div>
+                                        
                                         <Button type='primary'><ShoppingCartOutlined/> Add To Cart</Button>
                                     </div>
                                 </div>

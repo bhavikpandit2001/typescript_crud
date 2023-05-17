@@ -1,4 +1,6 @@
+import { Button } from "antd";
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface IProps {
   children: any
@@ -25,18 +27,14 @@ export class ErrorBoundary extends React.Component<IProps, IState> {
     if (this.state.hasError) {
       return (
         <>
-          <div className="heading">
+          <div className="heading" style={{ textAlign: "center" }}>
             <h1>Oops , Something is wrong ...</h1>
             <h3>Please Refresh</h3>
-            {/* </div>
-          <div className="content"> */}
-            {/* <Link to={"/"}> */}
-            <a href="/">
-              <button className="glow-on-hover" type="button">
-                Go Back
-              </button>
-            </a>
-            {/* </Link> */}
+          </div>
+          <div className="content">
+            <Link to="/">
+              <Button type="primary">Go back</Button>
+            </Link>
           </div>
         </>
       );

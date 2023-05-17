@@ -1,7 +1,7 @@
 import { CommentOutlined, UserOutlined } from '@ant-design/icons'
 import { Avatar, Modal, Typography } from 'antd'
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setComments } from '../../redux/posts/commentSlice'
 import { RootState } from '../../redux/store'
@@ -12,14 +12,12 @@ const Comments = () => {
     const [open, setOpen] = useState(false)
     const Comments = () =>{
         setOpen(true)
-    }
-    useEffect(() =>{
         axios.get("https://dummyjson.com/comments")
         .then(res =>{
             console.log(res.data.comments)
             dispatch(setComments(res.data.comments))
         })
-    },[])
+    }
     return (
         <div>
             <CommentOutlined onClick={Comments} style={{fontSize: "25px" , color: "orange"}} />
